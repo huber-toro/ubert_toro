@@ -1,0 +1,39 @@
+name: actividad_1
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9.2'
+      - name: paso1 - crea entorno virtual
+        run: python -m venv venv
+      - name: paso2 - activar entorno virtual
+        run: ./venv/Scripts/activate   
+      - name: paso3 - actualizar pip
+        run: pip install --upgrade pip
+      - name: paso4 - instalar dependencias
+        run: pip install -e .
+      - name: paso5 - Ejecutar script
+        run: python crs/pad_2026/actividad_1.py
+
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update Test
+          commit_user_name: ubert toro [GitHub Actions]
+          commit_user_email: alonso.toro@est.iudigital.edu.co
+          commit_author: ubert toro <alonso.toro@est.iudigital.edu.co>
