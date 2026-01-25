@@ -1,5 +1,0 @@
-¿Qué es un archivo de texto?
-Cuando la gente habla coloquialmente de un archivo de texto, normalmente se refiere simplemente a cualquier tipo de archivo que contenga texto. Puede ser un archivo TXT con solo texto sin formato o un archivo DOCX , que contiene imágenes y numerosos metadatos además de texto formateado.
-
-Sin embargo, la definición técnica es un poco más específica. Desde una perspectiva de tecnología de la información, un archivo de texto es básicamente un archivo que contiene caracteres para representar texto y está diseñado para almacenar, editar y enviar texto digital. En sentido estricto, el término se refiere a algunas propiedades muy específicas.
-
