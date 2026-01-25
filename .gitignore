@@ -1,8 +1,8 @@
 .vscode
-src/pad_2026/__pycache__
+__pycache__
 pad.egg-info
 venv
-src/pad_2026/json/*.json
+
 
 
 
